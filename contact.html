@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStudent - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .contact-bg {
+            /* Simple gradient background */
+            background: linear-gradient(rgba(59, 130, 246, 0.85), rgba(99, 102, 241, 0.85));
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+     <nav class="bg-white shadow-md fixed w-full z-20 top-0 left-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- Make sure 'logo.png' is your new LogiStudent logo -->
+                <img src="logo.png" class="h-12" alt="LogiStudent Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">LogiStudent</span>
+            </a>
+             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="reservation.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    Réserver
+                </a>
+                 <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Accueil</a></li>
+                    <li><a href="apartments.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Appartements</a></li>
+                    <li><a href="index.html#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">À Propos</a></li>
+                    <li><a href="reservation.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Réservation</a></li>
+                    <li><a href="recruitment.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Recrutement</a></li>
+                    <li><a href="about-me.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Le Créateur</a></li>
+   
+                    <li><a href="contact.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:p-0" aria-current="page">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br> <br> <br> <!-- Added extra break -->
+    <!-- Hero Contact Section -->
+    <header class="contact-bg text-white pt-32 pb-24"> <!-- Increased padding -->
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Contactez LogiStudent</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Une question ? Besoin d'aide pour trouver votre logement étudiant à Winnipeg ? Nous sommes là pour vous aider.</p>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Nos Coordonnées</h2>
+                <p class="text-gray-600 mb-8">N'hésitez pas à nous joindre par email ou téléphone pour toute demande d'information sur nos services ou appartements.</p>
+
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                         <svg class="w-6 h-6 mr-4 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                          </svg>
+                        <span class="text-gray-700">info@logistudent.ca</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 mr-4 text-blue-600 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                         </svg>
+                        <span class="text-gray-700">+1 431 557 6968</span>
+                    </div>
+                     <div class="flex items-start"> <!-- Use items-start for potentially longer text -->
+                         <svg class="w-6 h-6 mr-4 text-blue-600 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                         </svg>
+                        <span class="text-gray-700">Winnipeg, Manitoba, Canada <br><em class="text-sm text-gray-500">(Visites sur rendez-vous uniquement)</em></span>
+                    </div>
+                </div>
+                 <p class="mt-8 text-gray-600">Pour les questions relatives aux offres d'emploi, veuillez consulter notre page <a href="recruitment.html" class="text-blue-600 hover:underline">Recrutement</a>.</p>
+            </div>
+            <div>
+                 <h2 class="text-3xl font-bold mb-6 text-gray-800">Envoyez-nous un message</h2>
+                <form class="bg-gray-100 p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nom Complet</label>
+                        <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Votre nom et prénom" required>
+                    </div>
+                     <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="votre.email@exemple.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
+                         <input type="text" id="subject" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-semibold">
+                        Envoyer le Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-semibold mb-4">LogiStudent</h4>
+                <p class="text-gray-400">Votre partenaire pour trouver le logement étudiant parfait à Winnipeg.</p>
+                 <!-- Reminder to replace logo -->
+                 <img src="logo.png" class="h-16 mt-4 opacity-80" alt="LogiStudent Footer Logo">
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                    <li><a href="apartments.html" class="text-gray-400 hover:text-white">Appartements</a></li>
+                     <li><a href="index.html#about" class="text-gray-400 hover:text-white">À Propos</a></li>
+                    <li><a href="reservation.html" class="text-gray-400 hover:text-white">Réservation</a></li>
+                    <li><a href="recruitment.html" class="text-gray-400 hover:text-white">Recrutement</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Légal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Mentions Légales</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Contactez-nous</h4>
+                <p class="text-gray-400">Email: info@logistudent.ca</p>
+                <p class="text-gray-400">Téléphone: +1 431 557 6968</p>
+                <p class="text-gray-400">Winnipeg, MB, Canada</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-gray-800 pt-6">
+            <p class="text-gray-500">© 2024 LogiStudent. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

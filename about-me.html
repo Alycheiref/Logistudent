@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStudent - À Propos du Créateur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Optional: Include animate.css for entry animations if desired -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg-alt { /* Slightly different or same hero bg */
+            background: linear-gradient(rgba(59, 130, 246, 0.85), rgba(99, 102, 241, 0.85)), url('placeholder-campus.jpg'); /* Use same or different background */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Simple fade-in animation class */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .profile-pic-container {
+            max-width: 350px; /* Control max width */
+            width: 80%; /* Responsive width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            .profile-pic-container {
+                width: 100%; /* Allow grid to control size */
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-20 top-0 left-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="logo.png" class="h-12" alt="LogiStudent Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">LogiStudent</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="reservation.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    Réserver
+                </a>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Accueil</a></li>
+                    <li><a href="apartments.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Appartements</a></li>
+                    <li><a href="index.html#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">À Propos</a></li>
+                    <li><a href="reservation.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Réservation</a></li>
+                     <li><a href="recruitment.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Recrutement</a></li>
+                    <!-- Add the link to this page -->
+                    <li><a href="about-me.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:p-0" aria-current="page">Le Créateur</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="pt-20"></div>
+
+    <!-- About Me Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <!-- Image Column -->
+                <div class="fade-in-section profile-pic-container">
+                    <!-- ====> IMPORTANT: Replace '/api/placeholder/400/500' with the actual path to Aly's picture <==== -->
+                    <img src="Aly.jpg" alt="Portrait de Aly Cheiref" class="rounded-lg shadow-xl w-full h-auto object-cover aspect-[3/4]">
+                    <!-- Aspect ratio example: aspect-[3/4] gives a portrait feel. Adjust as needed. -->
+                </div>
+
+                <!-- Text Column -->
+                <div class="fade-in-section">
+                    <span class="text-blue-600 font-semibold tracking-wide uppercase">Le Créateur</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Aly Cheiref</h1>
+                    <p class="text-xl text-gray-600 mb-6">
+                        Développeur passionné et expert IT derrière LogiStudent.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Fort d'une formation en Technologies de l'Information de l'Université de Saint-Boniface et parlant couramment arabe, français et anglais, j'ai lancé LogiStudent pour une raison simple : simplifier la recherche de logement pour les étudiants à Winnipeg.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Mon objectif est de transformer le défi de trouver un bon appartement près du campus en une expérience fluide et sans stress, vous permettant de vous concentrer sur ce qui compte vraiment : vos études.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="inline-flex items-center bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                            Développement Web
+                        </span>
+                        <span class="inline-flex items-center bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                             <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
+                            Approche Centrée-Utilisateur
+                        </span>
+                        <span class="inline-flex items-center bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">
+                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.566.379-1.566 2.6 0 2.978.999.24 1.48 1.39.947 2.286-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.566 2.6 1.566 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106-.54-.886-.061-2.042.947-2.287 1.566-.379 1.566-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                            Résolution de Problèmes
+                        </span>
+                         <span class="inline-flex items-center bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">
+                            <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7.586 5H4a1 1 0 000 2h3.586l-1.293 1.293A1 1 0 108 9.707l3-3a1 1 0 000-1.414l-3-3A1 1 0 007 2zm12 4a1 1 0 01-1 1h-3.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L15.414 13H19a1 1 0 000-2h-3.586l1.293-1.293A1 1 0 0019 8a1 1 0 010-1z" clip-rule="evenodd"></path></svg>
+                           Trilingue (AR/FR/EN)
+                        </span>
+                    </div>
+                    <a href="contact.html" class="inline-block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-6 py-3 text-center transition duration-150 ease-in-out transform hover:-translate-y-1 shadow-lg">
+                        Me Contacter
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- Optional: A small section linking back to LogiStudent -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in-section">
+             <h2 class="text-3xl font-bold mb-4">Découvrez LogiStudent</h2>
+             <p class="text-lg text-gray-700 mb-6">
+                 Explorez la plateforme conçue pour vous aider à trouver votre prochain logement étudiant à Winnipeg.
+             </p>
+             <a href="index.html" class="text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-base px-6 py-3 text-center transition duration-150 ease-in-out transform hover:-translate-y-1 shadow-lg">
+                 Visiter LogiStudent
+             </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-semibold mb-4">LogiStudent</h4>
+                <p class="text-gray-400">Votre partenaire pour trouver le logement étudiant parfait à Winnipeg.</p>
+                 <img src="logo.png" class="h-16 mt-4 opacity-80" alt="LogiStudent Footer Logo">
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                    <li><a href="apartments.html" class="text-gray-400 hover:text-white">Appartements</a></li>
+                    <li><a href="index.html#about" class="text-gray-400 hover:text-white">À Propos</a></li>
+                    <li><a href="reservation.html" class="text-gray-400 hover:text-white">Réservation</a></li>
+                    <li><a href="recruitment.html" class="text-gray-400 hover:text-white">Recrutement</a></li>
+                     <li><a href="about-me.html" class="text-gray-400 hover:text-white">Le Créateur</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Légal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Mentions Légales</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Contactez-nous</h4>
+                <p class="text-gray-400">Email: info@logistudent.ca</p>
+                <p class="text-gray-400">Téléphone: +1 431 557 6968</p> <!-- Included Aly's number here as site contact -->
+                <p class="text-gray-400">Winnipeg, MB, Canada</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-gray-800 pt-6">
+            <p class="text-gray-500">© 2024 LogiStudent. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        // Simple Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+                // Optional: remove class when scrolling out of view
+                // else {
+                //     entry.target.classList.remove('visible');
+                // }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        // Observe all elements with the class 'fade-in-section'
+        document.querySelectorAll('.fade-in-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

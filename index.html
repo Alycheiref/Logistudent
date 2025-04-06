@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStudent - Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            /* Using a blue gradient, replace '/api/placeholder/1920/1080' if you have a specific background image */
+            background: linear-gradient(rgba(59, 130, 246, 0.8), rgba(99, 102, 241, 0.8)), url('placeholder-campus.jpg'); /* Add a placeholder image or your own */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-20 top-0 left-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- Make sure 'logo.png' is your new LogiStudent logo -->
+                <img src="logo.png" class="h-12" alt="LogiStudent Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">LogiStudent</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <a href="reservation.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    Réserver
+                </a>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/></svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <li><a href="index.html" class="block py-2 px-3 text-blue-600 rounded md:bg-transparent md:p-0" aria-current="page">Accueil</a></li>
+                    <li><a href="apartments.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Appartements</a></li>
+                    <li><a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">À Propos</a></li>
+                    <li><a href="reservation.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Réservation</a></li>
+                    <li><a href="recruitment.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Recrutement</a></li>
+                    <li><a href="about-me.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Le Créateur</a></li>
+   
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br> <br>
+    <!-- Hero Section -->
+    <header class="hero-bg text-white pt-32 pb-24"> <!-- Increased padding top -->
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Trouvez Votre Logement Étudiant Idéal à Winnipeg</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">LogiStudent simplifie votre recherche de logement près des campus : Université de Saint-Boniface, Université de Winnipeg et Université du Manitoba.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="apartments.html" class="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 transition transform hover:-translate-y-1 shadow-lg">
+                    Voir les Appartements
+                </a>
+                <a href="reservation.html" class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 transition transform hover:-translate-y-1">
+                    Réserver Maintenant
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- À Propos Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">À Propos de LogiStudent</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                LogiStudent a été créé dans le but de simplifier la vie des étudiants cherchant un logement à Winnipeg. Nous comprenons les défis liés à la recherche d'un appartement adapté, abordable et bien situé, surtout lorsqu'on est nouveau dans la ville ou qu'on jongle avec les études.
+            </p>
+            <p class="text-lg text-gray-700">
+                Notre mission est de fournir une plateforme centralisée et facile à utiliser, offrant une sélection de logements de qualité spécifiquement choisis pour leur proximité avec les principaux campus universitaires et leurs aménagements répondant aux besoins des étudiants. Nous voulons que vous vous concentriez sur vos études, pas sur le stress de la recherche de logement.
+            </p>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section class="py-16 bg-gray-50"> <!-- Changed background slightly for contrast -->
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Nos Avantages</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg text-center shadow hover:shadow-xl transition">
+                     <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Recherche Ciblée</h3>
+                    <p class="text-gray-600">Filtrez facilement par campus, budget et type de logement.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center shadow hover:shadow-xl transition">
+                   <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Processus Simplifié</h3>
+                    <p class="text-gray-600">Réservez votre appartement rapidement et sans tracas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg text-center shadow hover:shadow-xl transition">
+                   <svg class="w-16 h-16 mx-auto mb-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L1.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.25 12L17 14.188l-1.25-2.188a2.25 2.25 0 00-1.7-1.7L12 9.75l2.188-1.25a2.25 2.25 0 001.7-1.7L17 4.75l1.25 2.188a2.25 2.25 0 001.7 1.7L22.25 9.75l-2.188 1.25a2.25 2.25 0 00-1.7 1.7z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-3">Logements Adaptés</h3>
+                    <p class="text-gray-600">Des appartements pensés pour les étudiants près des universités.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</br></br>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-semibold mb-4">LogiStudent</h4>
+                <p class="text-gray-400">Votre partenaire pour trouver le logement étudiant parfait à Winnipeg.</p>
+                 <!-- Reminder to replace logo -->
+                 <img src="logo.png" class="h-16 mt-4 opacity-80" alt="LogiStudent Footer Logo">
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
+                    <li><a href="apartments.html" class="text-gray-400 hover:text-white">Appartements</a></li>
+                     <li><a href="index.html#about" class="text-gray-400 hover:text-white">À Propos</a></li>
+                    <li><a href="reservation.html" class="text-gray-400 hover:text-white">Réservation</a></li>
+                    <li><a href="recruitment.html" class="text-gray-400 hover:text-white">Recrutement</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Légal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Mentions Légales</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-4">Contactez-nous</h4>
+                <p class="text-gray-400">Email: info@logistudent.ca</p>
+                <p class="text-gray-400">Téléphone: +1 431 557 6968</p>
+                <p class="text-gray-400">Winnipeg, MB, Canada</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-gray-800 pt-6">
+            <p class="text-gray-500">© 2024 LogiStudent. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
